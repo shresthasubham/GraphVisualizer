@@ -1,0 +1,134 @@
+@font-face {
+    font-family: kfont;
+    src: url('Karla-Regular.ttf');
+}
+@keyframes fade-in
+{
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+html
+{
+    font-family: kfont;
+}
+body
+{
+    background-color: rgb(42, 41, 41);
+    color:rgba(255,160,158,1);  
+}
+button
+{
+    margin:  10px 3px;
+    background-image: linear-gradient(aqua,rgb(234, 247, 4));
+    height: 40px;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    color: purple;
+    box-shadow: 2px 3px 7px 0px white;
+}
+button:hover
+{
+    cursor: pointer;
+}
+#algo-selector
+{
+    text-align: center;
+    margin-left: 50%;
+    padding:10px;
+    border: 2px solid blue;
+    border-radius: 3px;
+    display: inline-block;
+    color: black;
+    background-image: linear-gradient(aqua,rgb(234, 247, 4));  
+    width: 300px;
+    box-shadow: 2px 3px 7px 0px white;
+    border-radius: 5px;
+}
+#svg-container
+{
+    display: block;
+    margin: auto;
+    position: absolute;
+}
+#main-display, #nodesSVG, #edgesSVG
+{
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: white solid 2px;
+    border-radius: 5px;
+    background-color:rgb(85, 85, 85) ;
+    width: 1200px;
+    height: 600px;
+    box-shadow: 3px 3px 7px 2px aqua;
+} 
+#main-display
+{
+    z-index: 0;
+}
+#nodesSVG
+{
+    z-index: 2;
+    transition: all 1s ease;
+}
+#edgesSVG
+{
+    z-index: 1;
+}
+
+.graph-edge
+{ 
+    stroke: url(#redLinearGradient);
+    stroke-width: 3;
+    transition: all 0.5s;
+}
+.graph-node
+{
+    transition: all 0.5s ;
+}
+.edgeWeight-text,#input-form,#total-weight-text,.graph-edge,.graph-node
+{
+    animation: fade-in 1s;
+}
+
+.hidden-element
+{
+    opacity: 0;
+}
+#input-form
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+table  {
+    border: 1px solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding: 3px;
+    text-align: center;
+    background-image: linear-gradient(rgb(70, 251, 15),rgb(6, 230, 238));
+    color: black
+}
+tr,td,th
+{
+    border: 1px solid rgb(52, 51, 51);
+}
+.input-cell 
+{
+    text-align: center;
+    background-image: linear-gradient(rgb(204, 0, 255),rgb(250, 191, 255));
+    color: black;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+}
+th
+{
+    width: 30px;
+    height: 30px;
+}
+
+    
+

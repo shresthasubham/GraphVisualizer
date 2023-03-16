@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="SVGstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <title> SVG Graph Plotter</title>
+        <script src = "SVGcontrol.js"></script>
+    </head>
+    <body onload="createSVGwindow()" >
+        <button class="control-btn" onclick="inputAdjacencyMatrix()"><b> Enter Edges </b></button>
+        <button class="control-btn" onclick="createEdges()"> <b>Join Edges </b></button>
+        <button class="control-btn" onclick="executeAlgorithm()"><b> Exexute Algorithm</b> </button>
+        <div id="algo-selector">
+            <input type = "radio"  name="algorithm" value = "Prim's" checked><b>Prim's</b></form>
+            <input type = "radio"  name="algorithm" value = "Kruskal's"><b>Kruskal's</b></form>
+        </div>  
+    </body>
+</html>
